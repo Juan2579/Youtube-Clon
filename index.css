@@ -1,0 +1,131 @@
+:root{
+    --main-black: #202020;
+    --second-black: #212121;
+    --third-black: #181818;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    background-color: #212121;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+
+.general_container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 8% 92%;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    
+    ;
+}
+.header_container{
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-black);
+}
+.navbar_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #313131;
+}
+.navbar_logo{
+    position: relative;
+    min-width: 170px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.burger_icon{
+    width: 25px;
+    height: 30px;
+    cursor: pointer;
+}
+.youtube_logo{
+    width: 90px;
+    height: 45px;
+    cursor: pointer;
+}
+.navbar_logo span{
+    position: absolute;
+    right: 2%;
+    top: 29%;
+    width: 14px;
+    height: 8px;
+    font-size: 1rem;
+    color: #AAAAAA;
+}
+
+.navbar_search{
+    min-width: 720px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_search input{
+    width: 500px;
+    height: 40px;
+    padding: 7px;
+    background-color: #121212;
+    border: 1px solid #313131;
+}
+.navbar_search input::placeholder{
+    font-size: 1.6rem;
+}
+
+.navbar_search .search_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    background-color: #313131;
+    border: none;
+}
+.search_container img{
+    width: 40px;
+    height: 25px;
+}
+
+.navbar_search .microphone_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: var(--third-black);
+    border: none;
+    border-radius: 100px
+
+}
+.microphone_container img{
+    width: 40px;
+    height: 40px;
+}
