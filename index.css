@@ -50,6 +50,7 @@ ul, ol{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-right: 15px;
     border-bottom: 1px solid #313131;
 }
 .navbar_logo{
@@ -107,6 +108,7 @@ ul, ol{
     height: 40px;
     background-color: #313131;
     border: none;
+    cursor: pointer;
 }
 .search_container img{
     width: 40px;
@@ -117,15 +119,76 @@ ul, ol{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 45px;
     height: 40px;
     margin-left: 5px;
     background-color: var(--third-black);
     border: none;
-    border-radius: 100px
+    border-radius: 100px;
+    cursor: pointer;
 
 }
 .microphone_container img{
     width: 40px;
     height: 40px;
+}
+
+
+.navbar_profile{
+    min-width: 220px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_profile .grid_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: var(--main-black);
+    border: none;
+    
+}
+.grid_container img{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.navbar_profile .points_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: var(--main-black);
+    border: none;
+    
+}
+.points_container img{
+    width: 32px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.navbar_profile .profile_container{
+    width: 130px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-right: 5px;
+    color: #3EA6FF;
+    letter-spacing: 0.02rem;
+    font-size: 1.3rem;
+    background-color: var(--main-black);
+    border: 1px solid #3EA6FF;
+    cursor: pointer;
+}
+.profile_container img{
+    width: 28px;
+    height: 28px;
 }
